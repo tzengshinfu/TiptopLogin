@@ -93,5 +93,12 @@ namespace TiptopLogin {
         private void icoNotify_Click(object sender, EventArgs e) {
             ShowForm();
         }
+
+        private void frmLogin_Resize(object sender, EventArgs e) {
+            if (WindowState == FormWindowState.Minimized) {
+                WindowState = FormWindowState.Normal;
+                Hide();
+            }
+        }
     }
 }
